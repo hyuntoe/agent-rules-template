@@ -47,3 +47,10 @@ codex(GPT)·agy(Gemini)가 이 프로젝트에서 작업할 때 자동으로 읽
 - `graphify-out/wiki/index.md`가 있으면 원문 직접 읽기 전에 인덱스를 따른다.
 - 모듈 관계 질문은 grep보다 `graphify query`/`path`/`explain`을 우선한다.
 - `GRAPH_REPORT.md`가 없거나 오래됐으면 `graphify update .`로 갱신한다(AST 기반, 추가 API 비용 없음).
+
+## gemini/antigravity only : 윈도우 UI 아티팩트 대응
+
+윈도우와 WSL 간의 경로 매핑 문제로 에이전트의 내부 아티팩트가 UI에 표시되지 않을 수 있습니다.
+gemini/antigravity만 해당하는 규칙입니다. 
+
+- **아티팩트 이중 동기화**: Gemini(agy) 에이전트는 내부 아티팩트(`implementation_plan.md`, `task.md`, `walkthrough.md`)를 작성하거나 갱신할 때, 반드시 `workflow-rules.md`에 명시된 규칙에 맞추어 프로젝트의 `docs/` 디렉토리 하위의 해당 경로에도 물리적 복사본을 함께 생성하여 동기화 상태를 유지해야 합니다.
