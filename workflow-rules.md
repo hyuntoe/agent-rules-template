@@ -25,11 +25,13 @@
 - 플랜 파일은 작업당 하나만 만듭니다.
 - 플랜 파일 안에는 `Plan`, `Checklist`, `Context Notes`를 함께 둡니다.
 - `checklist.md`, `context-notes.md`처럼 분리 파일을 추가로 만들지 않습니다.
+- **Gemini/Antigravity 아티팩트 싱크**: 에이전트 내부 아티팩트인 `implementation_plan.md` 및 `task.md` 사본은 이곳에 동일하게 작성하여 동기화합니다.
 
 ### `docs/history/`
 
 - 완료된 작업 기록만 둡니다.
 - 프로젝트 작업 플랜은 `docs/history/project/YYYY-MM-DD_주제.md` 형식으로 이동합니다.
+- **Gemini/Antigravity 아티팩트 싱크**: 에이전트 완료 후 생성되는 `walkthrough.md` 사본은 `docs/history/project/` 하위로 이동하여 영구 보존합니다.
 - 세션 로그, 위키 온톨로지 등 다른 역사성 문서는 기존 하위 디렉토리 체계를 따릅니다.
 
 ## 작업 흐름
