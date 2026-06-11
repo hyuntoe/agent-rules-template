@@ -10,12 +10,12 @@ Claude, Codex(GPT), agy(Gemini)가 같은 프로젝트 문맥에서 공통 규�
 
 - `karpathy-plus.md`
   - 공통 개발 규칙의 단일 진실 소스입니다.
-  - 가정 명시, 단순성 우선, 외과적 수정, 단일 플랜 파일, 완료 전 테스트 같은 원칙을 정의합니다.
+  - 가정 명시, 단순성 우선, 외과적 수정, 작업별 단일 플랜 파일, 완료 전 테스트 같은 원칙을 정의합니다.
 - `workflow-rules.md`
   - `docs/backlog`, `docs/plans`, `docs/history` 사용 규칙을 정의합니다.
-  - 비단순 작업은 `docs/plans/`의 단일 플랜 파일에서 관리하고, 완료 후 `docs/history/project/`로 이동합니다.
+  - 비단순 작업은 `docs/plans/`의 작업별 플랜 파일에서 관리하고, 완료 후 `docs/history/project/`로 이동합니다.
 - `multi-agents-orchestration.md`
-  - Claude를 PM으로, Codex와 agy를 워커로 쓰는 협업 규칙을 정의합니다.
+  - 사용자가 진입한 인터랙티브 에이전트를 PM으로 두고, 필요한 에이전트를 워커로 쓰는 협업 규칙을 정의합니다.
   - headless 워커의 단방향 호출, worktree 격리, 핸드오프 기준을 담습니다.
 - `AGENTS.md`, `CLAUDE.md`
   - 각 에이전트용 진입 파일입니다.
