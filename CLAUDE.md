@@ -5,9 +5,10 @@
 - `karpathy-plus.md` — 공통 개발 규칙(Karpathy 기반 + 변형). 모든 작업에 적용.
 - `workflow-rules.md` — docs 디렉토리(backlog/plans/history) 관리 규칙.
 - `multi-agents-orchestration.md` — 멀티에이전트 협업·역할 규칙.
+- `local-context-routing.md` — 대용량 입력을 로컬 Ollama 모델로 먼저 라우팅하는 규칙.
 - `README.md` — 이 프로젝트가 무엇을 하는지·현재 상태·다음 단계 (프로젝트별).
 
-위 규칙 문서(karpathy-plus·workflow-rules·multi-agents)가 실제 규칙의 단일 진실 소스(SSOT)이며, 이 파일은 가리키기만 합니다. 프로젝트 한정 내용은 `README.md`와 `docs/`에만 둡니다. codex·agy는 같은 규칙을 `AGENTS.md`를 통해 읽습니다.
+위 규칙 문서(karpathy-plus·workflow-rules·multi-agents·local-context-routing)가 실제 규칙의 단일 진실 소스(SSOT)이며, 이 파일은 가리키기만 합니다. 프로젝트 한정 내용은 `README.md`와 `docs/`에만 둡니다. codex·agy는 같은 규칙을 `AGENTS.md`를 통해 읽습니다.
 
 ---
 

@@ -19,6 +19,8 @@ codex(GPT)·agy(Gemini)가 이 프로젝트에서 작업할 때 자동으로 읽
   작업은 `docs/plans/`에 작업별 플랜 파일 하나를 만들고 완료 시
   `docs/history/project/`로 이동한다.
 - **`multi-agents-orchestration.md`** — 멀티에이전트 협업·역할 규칙.
+- **`local-context-routing.md`** — 대용량 로그·긴 파일·긴 문서를 로컬
+  Ollama 모델로 먼저 라우팅하는 규칙.
 
 ## 멀티에이전트 — 너의 역할은 "실행 모드"로 정해진다
 
