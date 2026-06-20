@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Context Router"
+  short_description: "Ollama로 긴 입력의 관련 라인 후보를 찾습니다."
+  default_prompt: "이 긴 로그나 파일을 LCR로 줄여줘."
