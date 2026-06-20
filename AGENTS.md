@@ -21,6 +21,8 @@ codex(GPT)·agy(Gemini)가 이 프로젝트에서 작업할 때 자동으로 읽
 - **`multi-agents-orchestration.md`** — 멀티에이전트 협업·역할 규칙.
 - **`local-context-routing.md`** — 대용량 로그·긴 파일·긴 문서를 로컬
   Ollama 모델로 먼저 라우팅하는 규칙.
+- **`skill-usage-rules.md`** — 공통 스킬(`context-budget-gate`,
+  `local-context-router`, `graphify-code-map`) 사용·배포 규칙.
 
 ## 멀티에이전트 — 너의 역할은 "실행 모드"로 정해진다
 

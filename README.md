@@ -20,6 +20,11 @@ Claude, Codex(GPT), agy(Gemini)가 같은 프로젝트 문맥에서 공통 규�
 - `local-context-routing.md`
   - 대용량 로그, 긴 단일 파일, 긴 문서를 로컬 Ollama 모델로 먼저 라우팅하는 규칙을 정의합니다.
   - `gemma4:e2b-it-q4_K_M`과 `qwen2.5-coder:3b`를 기준 프로파일로 둡니다.
+- `skill-usage-rules.md`
+  - 공통 스킬을 언제 사용하고 어디에 배포할지 정의합니다.
+- `skills/`
+  - Codex CLI, Claude Code CLI, agy CLI에 복제할 공통 스킬 원본입니다.
+  - `context-budget-gate`, `local-context-router`, `graphify-code-map`을 둡니다.
 - `AGENTS.md`, `CLAUDE.md`
   - 각 에이전트용 진입 파일입니다.
   - 규칙 본문을 중복하지 않고 공통 문서를 가리키는 포인터 역할만 합니다.
@@ -42,7 +47,8 @@ Claude, Codex(GPT), agy(Gemini)가 같은 프로젝트 문맥에서 공통 규�
 2. 프로젝트 고유 정보는 `README.md`와 `docs/`에만 작성합니다.
 3. 공통 규칙을 바꾸고 싶으면 `karpathy-plus.md`, `workflow-rules.md`, `multi-agents-orchestration.md`를 수정합니다.
 4. 대용량 입력 처리 규칙을 바꾸고 싶으면 `local-context-routing.md`를 수정합니다.
-5. 에이전트 진입 파일인 `AGENTS.md`, `CLAUDE.md`는 가능한 한 얇은 포인터로 유지합니다.
+5. 공통 스킬을 바꾸고 싶으면 `skills/` 원본과 `skill-usage-rules.md`를 수정한 뒤 각 CLI 스킬 디렉토리에 복제합니다.
+6. 에이전트 진입 파일인 `AGENTS.md`, `CLAUDE.md`는 가능한 한 얇은 포인터로 유지합니다.
 
 ## 현재 상태
 
@@ -54,3 +60,4 @@ Claude, Codex(GPT), agy(Gemini)가 같은 프로젝트 문맥에서 공통 규�
 - `README.md`에 프로젝트 초기화 체크리스트 추가.
 - graphify 사용 예시와 갱신 타이밍 문서화.
 - WSL에서 Windows Ollama API를 찾는 예시 스크립트 추가.
+- 공통 스킬을 세 CLI 스킬 디렉토리에 동기화하는 스크립트 추가.
