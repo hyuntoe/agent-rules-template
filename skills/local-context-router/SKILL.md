@@ -57,3 +57,15 @@ Do not solve the task. Do not summarize the whole file.
 - Treat local output as candidate selection, not final truth.
 - Always inspect the original lines before using them for implementation.
 - For security, data loss, or architecture decisions, use routing only to narrow context.
+
+## Ollama Fallbacks
+
+LCR saves quota but must not block the task.
+
+1. Check `ollama list` before assuming a model exists.
+2. Do not download large models without user approval.
+3. If `gemma4:e2b-it-q4_K_M` is missing but `qwen2.5-coder:3b` exists, use qwen only for inputs likely under 32768 tokens.
+4. If Ollama does not respond within about 30 seconds, retry once.
+5. If the retry is also slow, fall back to `rg`, `git`, graphify, and direct original line reads.
+6. If routing is skipped, say why and pass the smallest manually selected original excerpt to the cloud LLM.
+7. In WSL, if `localhost:11434` fails, check the Windows host IP and `OLLAMA_HOST`.

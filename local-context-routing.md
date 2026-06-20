@@ -82,6 +82,20 @@ ollama ps
 - VRAM 관리는 Ollama 서버 종료보다 모델 unload로 처리합니다.
 - LM Studio는 GUI 실험과 백업 런타임으로 둘 수 있지만, 자동화 기본 경로는 Ollama로 둡니다.
 
+## Ollama 장애와 지연 대응
+
+LCR은 쿼터 절약 장치이지 작업을 막는 필수 관문이 아닙니다. Ollama나 모델이
+준비되지 않았으면 작게 폴백하고, 어떤 폴백을 했는지 보고합니다.
+
+1. `ollama list`로 필요한 모델이 있는지 먼저 확인합니다.
+2. 모델이 없으면 사용자 승인 없이 대형 모델을 다운로드하지 않습니다.
+3. `long-router`가 없고 `small-router`가 있으면 32768 tokens 이하 입력만 `small-router`로 처리합니다.
+4. Ollama 응답이 30초 이상 없으면 한 번만 재시도합니다.
+5. 재시도도 느리면 `rg`, `git`, graphify, 직접 원문 범위 읽기로 폴백합니다.
+6. 라우터 없이 클라우드 LLM에 보내야 하면 입력을 수동으로 줄이고, LCR을 쓰지 못한 이유를 함께 보고합니다.
+7. WSL에서 Windows Ollama API에 연결되지 않으면 `localhost:11434`, Windows host IP, `OLLAMA_HOST`를 순서대로 확인합니다.
+8. 다운로드, 설치, 장시간 pull, 서버 설정 변경은 사용자 승인 후 진행합니다.
+
 ## 에이전트 작업 흐름
 
 1. 입력이 큰지 먼저 판단합니다.
