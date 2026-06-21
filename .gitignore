@@ -4,6 +4,7 @@ __pycache__/
 .DS_Store
 .env
 *.log
+PERSONAL_PROJECTS.md
 
 # 저작물·대용량 데이터는 프로젝트에 맞게 아래 패턴을 켜서 제외한다 (예시).
 # 저작물(PDF 등)과 그 변환 산출물은 저작권상 git에 두지 않는다.
