@@ -36,6 +36,7 @@ Claude, Codex(GPT), agy(Gemini)가 같은 프로젝트 문맥에서 공통 규�
 이 템플릿의 목표는 다음과 같습니다.
 
 - 규칙 문서를 프로젝트별 내용과 분리합니다.
+- 특정 프로젝트에만 적용되는 작업 규칙은 공통 템플릿 문서에 섞지 않고, 해당 프로젝트의 `README.md`나 `docs/`에 둡니다.
 - 여러 에이전트가 같은 작업 기준을 공유하게 합니다.
 - 세션 기억이 아니라 저장소 문서를 기준으로 다음 작업을 이어갈 수 있게 합니다.
 - 복잡한 작업에서 계획, 구현, 검증, 기록을 분리된 문서 흐름으로 관리하게 합니다.
@@ -45,10 +46,11 @@ Claude, Codex(GPT), agy(Gemini)가 같은 프로젝트 문맥에서 공통 규�
 
 1. 이 저장소를 새 프로젝트의 시작점으로 복사합니다.
 2. 프로젝트 고유 정보는 `README.md`와 `docs/`에만 작성합니다.
-3. 공통 규칙을 바꾸고 싶으면 `karpathy-plus.md`, `workflow-rules.md`, `multi-agents-orchestration.md`를 수정합니다.
-4. 대용량 입력 처리 규칙을 바꾸고 싶으면 `local-context-routing.md`를 수정합니다.
-5. 공통 스킬을 바꾸고 싶으면 `skills/` 원본과 `skill-usage-rules.md`를 수정한 뒤 각 CLI 스킬 디렉토리에 복제합니다.
-6. 에이전트 진입 파일인 `AGENTS.md`, `CLAUDE.md`는 가능한 한 얇은 포인터로 유지합니다.
+3. 특정 프로젝트의 사정 때문에 생긴 규칙은 이 템플릿 문서에 추가하지 않고, 그 프로젝트 안에서만 기록합니다.
+4. 공통 규칙을 바꾸고 싶으면 `karpathy-plus.md`, `workflow-rules.md`, `multi-agents-orchestration.md`를 수정합니다.
+5. 대용량 입력 처리 규칙을 바꾸고 싶으면 `local-context-routing.md`를 수정합니다.
+6. 공통 스킬을 바꾸고 싶으면 `skills/` 원본과 `skill-usage-rules.md`를 수정한 뒤 각 CLI 스킬 디렉토리에 복제합니다.
+7. 에이전트 진입 파일인 `AGENTS.md`, `CLAUDE.md`는 가능한 한 얇은 포인터로 유지합니다.
 
 ## 현재 상태
 
