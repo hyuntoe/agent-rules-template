@@ -18,7 +18,7 @@
 - [x] `README.md`의 현재 상태와 다음 보강 후보에 로밍 규칙을 반영한다.
 - [x] 문서 변경을 검증한다.
 - [x] 의미 단위 커밋을 만든다.
-- [ ] 원격 브랜치에 푸시한다.
+- [x] 원격 브랜치에 푸시한다.
 - [ ] 프로젝트 리스트 대상별 보존 병합 작업 계획을 정리한다.
 
 ## Context Notes
@@ -26,11 +26,10 @@
 - Status: active.
 - Branch/worktree: `plan/agent-roaming-handoff` at
   `/mnt/c/Users/Hyuntoe/agent-rules-template`.
-- Last action: 문서 변경과 플랜을 `에이전트 로밍 핸드오프 규칙 추가` 커밋으로
-  묶었다.
-- Current intent: 원격 브랜치에 푸시한다.
-- Dirty files: `docs/plans/2026-07-17_agent-roaming-handoff.md`의 커밋 상태 갱신.
-- Next safe step: 커밋을 amend한 뒤 원격 브랜치에 푸시한다.
+- Last action: 원격 브랜치 `origin/plan/agent-roaming-handoff`에 푸시했다.
+- Current intent: 프로젝트별 보존 병합 계획을 사용자에게 보고한다.
+- Dirty files: `docs/plans/2026-07-17_agent-roaming-handoff.md`의 푸시 상태 갱신.
+- Next safe step: 상태 갱신을 커밋하고 최종 git 상태를 확인한다.
 - Blockers: 없음.
 - Last verification: `git diff`, 한국어 문장 끝 콜론 `rg` 검사,
   `git status --short --branch` 확인.
