@@ -18,7 +18,7 @@
   - `agent-rules-template` — 기준 원본. 병합 대상이 아니라 참조 무결성만 확인한다.
   - `jk-japanese` — 적용 완료. `main`에 병합하고 원격 푸시 완료.
   - `jk-make-mathtest` — 적용 완료. `main`에 병합하고 원격 푸시 완료.
-  - `jk-manager` — 대기.
+  - `jk-manager` — 적용 완료. `main`에 병합하고 원격 푸시 완료.
   - `SCS Mod modding` — 제외. Git 저장소가 아니므로 공통 규칙 병합 대상에서 뺀다.
 
 `agent-rules-template` 자체에는 내용을 다시 병합하지 않고 배포 기준 원본의
@@ -42,6 +42,7 @@
 - [x] `rabbit7-wiki`에 위키 운영 정책을 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
 - [x] `jk-make-mathtest`에 기존 수학 생성·브랜치·쿼터 절약 규칙을 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
 - [x] `jk-exam-kb`에 기존 KB 변환·검증 플랜과 미추적 입력 자료를 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
+- [x] `jk-manager`에 기존 Electron·출석 PWA·학생카드 플랜과 Windows toolchain 규칙을 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
 - [x] `rabbit7-trader`는 `ai-hq`로 통합하고 별도 적용 대상에서 제외한다.
 - [x] `SCS Mod modding`은 Git 저장소가 아니므로 제외한다.
 - [ ] 남은 적용 대상 프로젝트의 기존 규칙과 템플릿 차이를 각각 검토한다.
