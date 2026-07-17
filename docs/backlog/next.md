@@ -9,7 +9,7 @@
 ### 대상과 상태
 
 - WSL
-  - `ai-hq` — 대기. 활발한 worktree가 있어 후순위로 둔다.
+  - `ai-hq` — 적용 완료. active Windows usage tray worktree를 보존하고 `main`에 병합·원격 푸시 완료.
   - `jk-exam-kb` — 적용 완료. `main`에 병합하고 원격 푸시 완료.
   - `jk-math` — 대기.
   - `rabbit7-trader` — 제외. `ai-hq/docs/trading/`으로 흡수 통합했고 원격 저장소는 archive 처리했다.
@@ -43,6 +43,7 @@
 - [x] `jk-make-mathtest`에 기존 수학 생성·브랜치·쿼터 절약 규칙을 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
 - [x] `jk-exam-kb`에 기존 KB 변환·검증 플랜과 미추적 입력 자료를 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
 - [x] `jk-manager`에 기존 Electron·출석 PWA·학생카드 플랜과 Windows toolchain 규칙을 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
+- [x] `ai-hq`에 기존 운영 VM·공유 입주 서비스·Windows usage tray worktree 규칙을 보존한 로밍·핸드오프 규칙을 추가 병합하고 원격 푸시한다.
 - [x] `rabbit7-trader`는 `ai-hq`로 통합하고 별도 적용 대상에서 제외한다.
 - [x] `SCS Mod modding`은 Git 저장소가 아니므로 제외한다.
 - [ ] 남은 적용 대상 프로젝트의 기존 규칙과 템플릿 차이를 각각 검토한다.
