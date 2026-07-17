@@ -21,18 +21,18 @@
 - [x] 원격 브랜치에 푸시한다.
 - [x] PM 전환 시점을 알 수 없다는 점을 반영해 기존 전환 전 최신화 문구를
   트랜잭션 기반 체크포인트 문구로 바꾼다.
-- [ ] 프로젝트 리스트 대상별 보존 병합 작업 계획을 정리한다.
+- [x] 프로젝트 리스트 대상별 보존 병합 작업 계획을 정리한다.
 
 ## Context Notes
 
-- Status: active.
+- Status: complete.
 - Branch/worktree: `plan/agent-roaming-handoff` at
   `/mnt/c/Users/Hyuntoe/agent-rules-template`.
-- Last action: PM 전환 시점 인지 불가능성을 반영한 문구 보정을 검증했다.
-- Current intent: 보정 내용을 커밋하고 원격 브랜치에 푸시한다.
-- Dirty files: `multi-agents-orchestration.md`,
-  `docs/plans/2026-07-17_agent-roaming-handoff.md`.
-- Next safe step: 변경 파일을 커밋하고 푸시한다.
+- Last action: 템플릿 문서에 로밍·핸드오프 규칙을 반영하고, 대상 프로젝트별
+  보존 병합 계획을 정리했다.
+- Current intent: 완료된 플랜을 `docs/history/project/`로 이동하고 `main`에 병합한다.
+- Dirty files: 이 플랜 파일의 완료 상태 갱신.
+- Next safe step: 플랜 파일을 history로 이동해 커밋한다.
 - Blockers: 없음.
 - Last verification: `git diff`, 한국어 문장 끝 콜론 `rg` 검사,
   `git status --short --branch` 확인.
